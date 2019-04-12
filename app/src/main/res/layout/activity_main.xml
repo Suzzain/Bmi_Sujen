@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:text="Your Height:"
+        style="@style/TextView"
+        android:textSize="20sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etHeight"
+        android:layout_toEndOf="@+id/tvHeight"
+        android:layout_marginLeft="10dp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tvCentimeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etHeight"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="-3dp"
+        android:layout_toEndOf="@id/tvHeight"
+        android:text="(Centimeter)"
+        android:textSize="15sp" />
+
+    <TextView
+
+        style="@style/TextView"
+        android:id="@+id/tvWeight"
+        android:layout_below="@+id/tvCentimeter"
+        android:textSize="20sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Your Weight:"
+        />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etWeight"
+        android:layout_toEndOf="@+id/tvHeight"
+        android:layout_below="@id/tvCentimeter"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/tvKg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etWeight"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@id/tvWeight"
+        android:text="(Kilogram)"
+        android:textSize="15sp" />
+
+    <Button
+        style="@style/TextView"
+        android:id="@+id/btnResult"
+        android:layout_below="@+id/tvKg"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="Compute BMI"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/tvBmi"
+        android:layout_toLeftOf="@+id/etWeight"
+        android:layout_below="@+id/btnResult"
+        android:text="Your BMI:"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        style="@style/TextView"
+        android:id="@+id/tvBmir"
+        android:layout_below="@+id/tvBmi"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/etWeight"
+        android:textSize="20sp"/>
+
+
+
+
+</RelativeLayout>
